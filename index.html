@@ -1,37 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="./dist/output.css"/>
+  <title>DeluxeDev.tech </title>
+  <link rel="stylesheet" href="./dist/output.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 
 <body class="bg-blue-50 text-gray-800 px-4 sm:px-8 md:px-16 lg:px-24 text-xl">
   <header class=" sticky top-0 border-b bg-blue-50">
     <nav class="flex items-center justify-between w-full px-4 sm:px-10 py-4">
       <div class="mb-2 md:mb-0">
-        <img alt="my logo" src="Logo.jpg" class="h-12 w-auto object-contain">
+        <img alt="my logo" src="Logo (2).png" class="h-12 w-auto object-contain rounded-lg">
       </div>
-      <ul class="flex flex-wrap space-x-4 text-blue-600 font-semibold">
-        <li>Home</li>
-        <li>Contact</li>
-        <li>About</li>
+      <ul class="flex flex-nowrap whitespace-nowrap">
+        <li><a href="#home"
+            class="relative group inline-block px-3 py-1 cursor-pointer text-blue-600 font-semibold transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded">Home</a>
+        </li>
+        <li><a href="#contact"
+            class="relative group inline-block px-3 py-1 cursor-pointer text-blue-600 font-semibold transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded">Contact</a>
+        </li>
+        <li><a href="#about"
+            class="relative group inline-block px-3 py-1 cursor-pointer text-blue-600 font-semibold transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded">About</a>
+        </li>
       </ul>
     </nav>
   </header>
-
   <main>
-    <section class="flex flex-col md:flex-row items-center justify-between w-full gap-8 py-8">
+    <section id="home" class="flex flex-col md:flex-row items-center justify-between w-full gap-8 py-8">
       <div class="flex-1">
         <h1 class="p-2 text-2xl sm:text-3xl md:text-4xl font-bold">
           <span>Hello I'm </span>
           <span class="text-blue-600 italic">Asamoah Divine Edem.</span>
         </h1>
         <p class="p-2 text-base sm:text-lg md:text-xl">
-          Welcome to My Portfolio, I am an aspiring <br>AI/ML Engineer and Data Analyst.<br>
-          I enjoy turning ideas into digital experiences<br> and continuously learning to grow in the tech space.
+          I am an aspiring <span class="text-blue-600 font-semibold">AI/ML Engineer and Data Analyst</span> with a deep
+          passion for technology and innovation.
+          I thrive on transforming ideas into impactful digital solutions through data-driven insights and intelligent
+          systems.
+          With a solid and growing foundation in data analytics and machine learning, I am constantly exploring new
+          tools and techniques
+          to sharpen my skills and stay ahead in the ever-evolving tech landscape. This portfolio showcases my journey
+          and the steps I am taking toward building a meaningful career at the intersection of AI and data.
         </p>
       </div>
       <div class="flex-1 flex justify-center">
@@ -39,7 +59,8 @@
       </div>
     </section>
 
-    <section>
+    <br>
+    <section id="about">
       <div class="text-center italic mb-4">
         <p class="font-bold text-2xl">EDUCATION</p>
       </div>
@@ -57,16 +78,13 @@
           <p class="text-gray-600 font-bold">(2022-2024)</p>
         </div>
       </div>
-    </section>
 
-    <section>
       <div class="text-center italic mt-8 mb-4">
         <p class="font-bold text-2xl">SKILLS</p>
       </div>
-      <div class="flex flex-col md:flex-row items-center justify-center w-full gap-6 px-2 sm:px-10">
+      <div class="flex flex-col md:flex-row items-center justify-center w-full gap-6 px-2 sm:px-10 mb-8">
         <div class="bg-white p-6 rounded-lg hover:shadow-md w-full md:w-1/3 mb-4 md:mb-0">
           <h3 class="text-xl font-semibold mb-2 text-blue-600">AI/ML Engineering</h3>
-          <br>
           <p class="text-gray-600 font-semibold">Programming languages:</p>
           <ul class="list-disc list-inside">
             <li>Python</li>
@@ -103,13 +121,14 @@
     </section>
   </main>
 
-  <footer class="bg-gradient-to-r from-blue-700 via-blue-500 to-blue-400 text-white py-6 mt-12">
+  <footer id="contact" class="bg-gradient-to-r from-blue-700 via-blue-500 to-blue-400 text-white py-6 mt-12">
     <div class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
       <div class="flex flex-col md:flex-row gap-6 items-center md:items-start">
         <div class="space-y-2 text-center md:text-left">
           <p>
             <strong>📧Email:</strong>
-            <a href="mailto:divineasamoah13@gmail.com" class="underline hover:text-blue-300">divineasamoah13@gmail.com</a>
+            <a href="mailto:divineasamoah13@gmail.com"
+              class="underline hover:text-blue-300">divineasamoah13@gmail.com</a>
           </p>
           <p>
             <strong>📞Phone:</strong>
@@ -117,11 +136,13 @@
           </p>
           <p>
             <strong>👔LinkedIn:</strong>
-            <a href="https://www.linkedin.com/in/divine-asamoah-407a5b34b" target="_blank" rel="noopener" class="underline hover:text-blue-300">divine-asamoah-407a5b34b</a>
+            <a href="https://www.linkedin.com/in/divine-asamoah-407a5b34b" target="_blank" rel="noopener"
+              class="underline hover:text-blue-300">divine-asamoah-407a5b34b</a>
           </p>
           <p>
             <strong>💻GitHub:</strong>
-            <a href="https://github.com/Deluxe-star" target="_blank" rel="noopener" class="underline hover:text-blue-300">Deluxe-star</a>
+            <a href="https://github.com/Deluxe-star" target="_blank" rel="noopener"
+              class="underline hover:text-blue-300">Deluxe-star</a>
           </p>
         </div>
       </div>
@@ -133,5 +154,3 @@
     </div>
   </footer>
 </body>
-
-</html>
